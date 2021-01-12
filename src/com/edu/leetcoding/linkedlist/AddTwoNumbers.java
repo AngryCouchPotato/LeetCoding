@@ -49,26 +49,4 @@ public class AddTwoNumbers {
         }
         addTwoNumbers(l1, l2, res.next, carry);
     }
-
-
-    /*
-        Definition for singly-linked list.
-        */
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
 }
