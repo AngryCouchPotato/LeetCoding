@@ -1,6 +1,9 @@
 package com.edu.leetcoding.array;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /*
     15. 3Sum
@@ -30,8 +33,11 @@ public class ThreeSum {
             return Collections.EMPTY_LIST;
         }
         Arrays.sort(nums);
-        Set<List<Integer>> result = new HashSet<>();
+        List<List<Integer>> result = new ArrayList<>();
         for (int left = 0; left < nums.length - 2; left++) {
+            if (left - 1 >= 0 && nums[left] == nums[left - 1]) {
+                continue;
+            }
             int mid = left + 1;
             int right = nums.length - 1;
             while (mid < right) {
@@ -42,11 +48,17 @@ public class ThreeSum {
                     mid++;
                 } else {
                     result.add(List.of(nums[left], nums[mid], nums[right]));
+                    while (mid + 1 < right && nums[mid] == nums[mid + 1]) {
+                        mid++;
+                    }
+                    while (right - 1 > mid && nums[right] == nums[right - 1]) {
+                        right--;
+                    }
                     mid++;
                     right--;
                 }
             }
         }
-        return new ArrayList<>(result);
+        return result;
     }
 }
