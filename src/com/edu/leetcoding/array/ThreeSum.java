@@ -27,7 +27,7 @@ import java.util.List;
  */
 public class ThreeSum {
 
-    // O(n^2) time : O(1) space
+    // O(n^2) time : O(n) space
     public List<List<Integer>> threeSum(int[] nums) {
         if (nums.length < 3) {
             return Collections.EMPTY_LIST;
