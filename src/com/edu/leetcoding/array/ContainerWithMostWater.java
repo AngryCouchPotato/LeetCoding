@@ -30,7 +30,9 @@ package com.edu.leetcoding.array;
  * */
 public class ContainerWithMostWater {
 
-    // O(n) time : O(1) space
+    /**
+     *  O(n) time : O(1) space
+     */
     public int maxArea(int[] height) {
         int left = 0;
         int right = height.length - 1;
