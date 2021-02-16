@@ -34,10 +34,10 @@ public class MinimumSizeSubarraySum {
         int minLength = Integer.MAX_VALUE;
         int sum = 0;
         int left = 0;
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i];
+        for (int right = 0; right < nums.length; right++) {
+            sum += nums[right];
             while (sum >= target) {
-                minLength = Math.min(minLength, i + 1 - left);
+                minLength = Math.min(minLength, right + 1 - left);
                 sum -= nums[left++];
             }
         }
