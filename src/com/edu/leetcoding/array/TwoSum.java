@@ -3,7 +3,7 @@ package com.edu.leetcoding.array;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
+/**
     1. Two Sum
 
     Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -21,15 +21,17 @@ import java.util.Map;
         Input: nums = [3,3], target = 6
         Output: [0,1]
     Constraints:
-        2 <= nums.length <= 103
-        -109 <= nums[i] <= 109
-        -109 <= target <= 109
+        2 <= nums.length <= 10^3
+        -10^9 <= nums[i] <= 10^9
+        -10^9 <= target <= 10^9
         Only one valid answer exists.
 
     */
 public class TwoSum {
 
-    // O(n) time : O(n) space
+    /**
+     *  O(n) time : O(n) space
+     */
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> cache = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {

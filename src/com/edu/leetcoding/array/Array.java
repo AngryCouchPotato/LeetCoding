@@ -2,7 +2,7 @@ package com.edu.leetcoding.array;
 
 import java.util.Arrays;
 
-/*
+/**
     1679. Max Number of K-Sum Pairs
 
     You are given an integer array nums and an integer k.
@@ -24,14 +24,16 @@ import java.util.Arrays;
         There are no more pairs that sum up to 6, hence a total of 1 operation.
 
     Constraints:
-        1 <= nums.length <= 105
-        1 <= nums[i] <= 109
-        1 <= k <= 109
+        1 <= nums.length <= 10^5
+        1 <= nums[i] <= 10^9
+        1 <= k <= 10^9
 
     */
 public class Array {
 
-    // O(n*log(n)) time : O(1) space
+    /**
+     *  O(n*log(n)) time : O(1) space
+     */
     public int maxOperations(int[] nums, int k) {
         Arrays.sort(nums);
         int left = 0;

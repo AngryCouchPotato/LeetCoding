@@ -4,7 +4,7 @@ import java.util.*;
 
 import static java.util.Collections.EMPTY_LIST;
 
-/*
+/**
     18. 4Sum
 
     Given an array nums of n integers and an integer target, are there elements a, b, c, and d in nums such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
@@ -18,13 +18,15 @@ import static java.util.Collections.EMPTY_LIST;
         Output: []
     Constraints:
         0 <= nums.length <= 200
-        -109 <= nums[i] <= 109
-        -109 <= target <= 109
+        -10^9 <= nums[i] <= 10^9
+        -10^9 <= target <= 10^9
 
  */
 public class FourSum {
 
-    // O(n^3) time : O(n) space
+    /**
+     *  O(n^3) time : O(n) space
+     */
     public List<List<Integer>> fourSum(int[] nums, int target) {
         if (nums.length < 4) {
             return EMPTY_LIST;

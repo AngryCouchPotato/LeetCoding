@@ -1,6 +1,6 @@
 package com.edu.leetcoding.array;
 
-/*
+/**
     724. Find Pivot Index
 
     Given an array of integers nums, calculate the pivot index of this array.
@@ -31,13 +31,15 @@ package com.edu.leetcoding.array;
         Left sum = 0 (no elements to the left of index 0)
         Right sum = nums[1] + nums[2] = 1 + -1 = 0
     Constraints:
-        1 <= nums.length <= 104
+        1 <= nums.length <= 10^4
         -1000 <= nums[i] <= 1000
 
  */
 public class FindPivotIndex {
 
-    // O(n) time | O(1) space
+    /**
+     *  O(n) time : O(1) space
+     */
     public int pivotIndex(int[] nums) {
         int sumAll = 0;
         for(int num : nums) {

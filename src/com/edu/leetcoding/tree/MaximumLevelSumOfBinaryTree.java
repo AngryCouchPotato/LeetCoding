@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 
-/*
+/**
     1161. Maximum Level Sum of a Binary Tree
 
     Given the root of a binary tree, the level of its root is 1, the level of its children is 2, and so on.
@@ -25,13 +25,13 @@ import java.util.Queue;
         Output: 2
 
     Constraints:
-        The number of nodes in the tree is in the range [1, 104].
-        -105 <= Node.val <= 105
+        The number of nodes in the tree is in the range [1, 10^4].
+        -10^5 <= Node.val <= 10^5
 
  */
 public class MaximumLevelSumOfBinaryTree {
 
-    /*
+    /**
      *   First solution with DFS algorithm
      *       O(n) time : O(h) space where h is maximum height of Binary Tree.
      */
@@ -59,7 +59,7 @@ public class MaximumLevelSumOfBinaryTree {
         }
     }
 
-    /*
+    /**
      *  Second solution with BFS algorithm
      *      O(n) time : O(w) where w is maximum width of Binary Tree
      */

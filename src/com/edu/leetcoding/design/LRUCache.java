@@ -3,7 +3,7 @@ package com.edu.leetcoding.design;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
+/**
     146. LRU Cache
 
     Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
@@ -34,8 +34,8 @@ import java.util.Map;
         Constraints:
             1 <= capacity <= 3000
             0 <= key <= 3000
-            0 <= value <= 104
-            At most 3 * 104 calls will be made to get and put.
+            0 <= value <= 10^4
+            At most 3 * 10^4 calls will be made to get and put.
 
  */
 public class LRUCache {

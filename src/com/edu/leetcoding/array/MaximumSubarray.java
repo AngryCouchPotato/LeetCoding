@@ -21,14 +21,16 @@ package com.edu.leetcoding.array;
  *      Input: nums = [-100000]
  *      Output: -100000
  *  Constraints:
- *      1 <= nums.length <= 3 * 104
- *      -105 <= nums[i] <= 105
+ *      1 <= nums.length <= 3 * 10^4
+ *      -10^5 <= nums[i] <= 10^5
  *  Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
  *
  * */
 public class MaximumSubarray {
 
-    // O(n) time : O(1) space
+    /**
+     *  O(n) time : O(1) space
+     */
     public int maxSubArray(int[] nums) {
         int sum = 0;
         int max = Integer.MIN_VALUE;

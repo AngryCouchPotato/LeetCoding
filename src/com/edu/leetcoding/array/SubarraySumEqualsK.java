@@ -15,14 +15,16 @@ import java.util.Map;
  *      Input: nums = [1,2,3], k = 3
  *      Output: 2
  *  Constraints:
- *      1 <= nums.length <= 2 * 104
+ *      1 <= nums.length <= 2 * 10^4
  *      -1000 <= nums[i] <= 1000
- *      -107 <= k <= 107
+ *      -10^7 <= k <= 10^7
  *
  * */
 public class SubarraySumEqualsK {
 
-    // O(n) - time | O(n) - space
+    /**
+     *  O(n) time : O(1) space
+     */
     public int subarraySum(int[] nums, int k) {
         int totalCount = 0;
         Map<Integer, Integer> map = new HashMap<>();
@@ -38,7 +40,9 @@ public class SubarraySumEqualsK {
         return totalCount;
     }
 
-    // O(n^2) - time | O(1) - space
+    /**
+     *  O(n^2) - time | O(1) - space
+     */
     public int subarraySum2(int[] nums, int k) {
         int totalCount = 0;
         for (int i = 0; i < nums.length; i++) {

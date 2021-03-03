@@ -18,7 +18,7 @@ import java.util.Arrays;
  *
  *      3 <= nums.length <= 10^3
  *      -10^3 <= nums[i] <= 10^3
- *      -10^4 <= target <= 10^4c
+ *      -10^4 <= target <= 10^4
  *
  * */
 public class ThreeSumClosest {

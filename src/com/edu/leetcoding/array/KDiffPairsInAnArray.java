@@ -34,9 +34,9 @@ import java.util.Arrays;
  *      Input: nums = [-1,-2,-3], k = 1
  *      Output: 2
  *  Constraints:
- *      1 <= nums.length <= 104
- *      -107 <= nums[i] <= 107
- *      0 <= k <= 107
+ *      1 <= nums.length <= 10^4
+ *      -10^7 <= nums[i] <= 10^7
+ *      0 <= k <= 10^7
  *
  * */
 public class KDiffPairsInAnArray {

@@ -22,10 +22,10 @@ package com.edu.leetcoding.binarysearch;
  *      Output: -1
  *  Constraints:
  *      1 <= nums.length <= 5000
- *      -104 <= nums[i] <= 104
+ *      -10^4 <= nums[i] <= 10^4
  *      All values of nums are unique.
  *      nums is guaranteed to be rotated at some pivot.
- *      -104 <= target <= 104
+ *      -10^4 <= target <= 10^4
  *  Follow up: Can you achieve this in O(log n) time complexity?
  *
  * */

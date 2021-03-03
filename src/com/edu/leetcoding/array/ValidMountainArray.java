@@ -1,6 +1,6 @@
 package com.edu.leetcoding.array;
 
-/*
+/**
     941. Valid Mountain Array
 
     Given an array of integers arr, return true if and only if it is a valid mountain array.
@@ -20,8 +20,8 @@ package com.edu.leetcoding.array;
         Input: arr = [0,3,2,1]
         Output: true
     Constraints:
-        1 <= arr.length <= 104
-        0 <= arr[i] <= 104
+        1 <= arr.length <= 10^4
+        0 <= arr[i] <= 10^4
 
  */
 public class ValidMountainArray {

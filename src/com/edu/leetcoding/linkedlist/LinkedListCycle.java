@@ -1,6 +1,6 @@
 package com.edu.leetcoding.linkedlist;
 
-/*
+/**
     141. Linked List Cycle
 
     Given head, the head of a linked list, determine if the linked list has a cycle in it.
@@ -22,8 +22,8 @@ package com.edu.leetcoding.linkedlist;
         Output: false
         Explanation: There is no cycle in the linked list.
     Constraints:
-        The number of the nodes in the list is in the range [0, 104].
-        -105 <= Node.val <= 105
+        The number of the nodes in the list is in the range [0, 10^4].
+        -10^5 <= Node.val <= 10^5
         pos is -1 or a valid index in the linked-list.
 
     Follow up: Can you solve it using O(1) (i.e. constant) memory?
@@ -31,7 +31,9 @@ package com.edu.leetcoding.linkedlist;
     */
 public class LinkedListCycle {
 
-    // O(n) time : O(1) space
+    /**
+     *  O(n) time : O(1) space
+     */
     public boolean hasCycle(ListNode head) {
         if(head == null) {
             return false;

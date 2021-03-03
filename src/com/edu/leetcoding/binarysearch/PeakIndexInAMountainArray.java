@@ -27,8 +27,8 @@ package com.edu.leetcoding.binarysearch;
  *      Input: arr = [24,69,100,99,79,78,67,36,26,19]
  *      Output: 2
  *  Constraints:
- *      3 <= arr.length <= 104
- *      0 <= arr[i] <= 106
+ *      3 <= arr.length <= 10^4
+ *      0 <= arr[i] <= 10^6
  *      arr is guaranteed to be a mountain array.
  *  Follow up: Finding the O(n) is straightforward, could you find an O(log(n)) solution?
  *

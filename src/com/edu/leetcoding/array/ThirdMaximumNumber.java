@@ -2,7 +2,7 @@ package com.edu.leetcoding.array;
 
 import java.util.Arrays;
 
-/*
+/**
     414. Third Maximum Number
 
     Given integer array nums, return the third maximum number in this array. If the third maximum does not exist, return the maximum number.
@@ -20,15 +20,17 @@ import java.util.Arrays;
         Explanation: Note that the third maximum here means the third maximum distinct number.
         Both numbers with value 2 are both considered as second maximum.
     Constraints:
-        1 <= nums.length <= 104
-        -231 <= nums[i] <= 231 - 1
+        1 <= nums.length <= 10^4
+        -2^31 <= nums[i] <= 2^31 - 1
 
     Follow up: Can you find an O(n) solution? // TODO
 
  */
 public class ThirdMaximumNumber {
 
-    // O(n*log(n)) time : O(1) space
+    /**
+     *  O(n*log(n)) time : O(1) space
+     */
     public int thirdMax(int[] nums) {
         Arrays.sort(nums);
         int firstMax = nums[nums.length - 1];

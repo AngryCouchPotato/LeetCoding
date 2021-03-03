@@ -1,6 +1,6 @@
 package com.edu.leetcoding.array;
 
-/*
+/**
     167. Two Sum II - Input array is sorted
 
     Given an array of integers numbers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
@@ -18,7 +18,7 @@ package com.edu.leetcoding.array;
         Input: numbers = [-1,0], target = -1
         Output: [1,2]
     Constraints:
-        2 <= numbers.length <= 3 * 104
+        2 <= numbers.length <= 3 * 10^4
         -1000 <= numbers[i] <= 1000
         numbers is sorted in increasing order.
         -1000 <= target <= 1000
@@ -27,7 +27,9 @@ package com.edu.leetcoding.array;
  */
 public class TwoSumII {
 
-    // O(n) time : O(1) space
+    /**
+     *  O(n) time : O(1) space
+     */
     public int[] twoSum(int[] numbers, int target) {
         int left = 0;
         int right = numbers.length - 1;

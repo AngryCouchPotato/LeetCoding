@@ -27,9 +27,9 @@ package com.edu.leetcoding.binarysearch;
  *      Input: nums = [2,3,5,7,11], threshold = 11
  *      Output: 3
  *  Constraints:
- *      1 <= nums.length <= 5 * 104
- *      1 <= nums[i] <= 106
- *      nums.length <= threshold <= 106
+ *      1 <= nums.length <= 5 * 10^4
+ *      1 <= nums[i] <= 10^6
+ *      nums.length <= threshold <= 10^6
  *
  * */
 public class FindTheSmallestDivisorGivenAThreshold {

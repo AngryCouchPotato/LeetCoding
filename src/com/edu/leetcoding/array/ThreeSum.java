@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/*
+/**
     15. 3Sum
 
     Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
@@ -22,12 +22,14 @@ import java.util.List;
         Output: []
     Constraints:
         0 <= nums.length <= 3000
-        -105 <= nums[i] <= 105
+        -10^5 <= nums[i] <= 10^5
 
  */
 public class ThreeSum {
 
-    // O(n^2) time : O(n) space
+    /**
+     *  O(n^2) time : O(n) space
+     */
     public List<List<Integer>> threeSum(int[] nums) {
         if (nums.length < 3) {
             return Collections.EMPTY_LIST;

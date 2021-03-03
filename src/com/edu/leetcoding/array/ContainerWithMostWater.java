@@ -24,8 +24,8 @@ package com.edu.leetcoding.array;
  *      Output: 2
  *  Constraints:
  *      n == height.length
- *      2 <= n <= 3 * 104
- *      0 <= height[i] <= 3 * 104
+ *      2 <= n <= 3 * 10^4
+ *      0 <= height[i] <= 3 * 10^4
  *
  * */
 public class ContainerWithMostWater {

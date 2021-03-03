@@ -1,6 +1,6 @@
 package com.edu.leetcoding.array;
 
-/*
+/**
     26. Remove Duplicates from Sorted Array
 
     Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.
@@ -30,8 +30,8 @@ package com.edu.leetcoding.array;
         Explanation: Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.
                         It doesn't matter what values are set beyond the returned length.
     Constraints:
-        0 <= nums.length <= 3 * 104
-        -104 <= nums[i] <= 104
+        0 <= nums.length <= 3 * 10^4
+        -10^4 <= nums[i] <= 10^4
         nums is sorted in ascending order.
 
  */
