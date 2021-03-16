@@ -22,7 +22,7 @@ package com.edu.leetcoding.stack;
  *
  * */
 public class CustomStack {
-    private int[] array;
+    private final int[] array;
     private int topId;
 
     public CustomStack(int maxSize) {
