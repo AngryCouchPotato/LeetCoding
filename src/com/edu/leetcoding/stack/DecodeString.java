@@ -66,4 +66,39 @@ public class DecodeString {
         }
         return currentString.toString();
     }
+
+    public String decodeStringOneStack(String s) {
+        Stack<Character> stack = new Stack<>();
+        for(int i = 0; i < s.length(); i++) {
+            char current = s.charAt(i);
+            if (current == ']'){
+                StringBuilder sb = new StringBuilder();
+                while(stack.peek() != '[') {
+                    sb.append(stack.pop());
+                }
+                stack.pop();// pop [
+                int base = 1;
+                int num = 0;
+                while(!stack.isEmpty() && Character.isDigit(stack.peek())) {
+                    num = num + (stack.pop() - '0') * base; // pop all digits
+                    base *= 10;
+                }
+                String str = sb.toString();
+                while(num-- > 1) {
+                    sb.append(str);
+                }
+                str = sb.toString();
+                for(int j = str.length() - 1; j >= 0; j--) {
+                    stack.push(str.charAt(j));
+                }
+            } else {
+                stack.push(current);
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        while(!stack.isEmpty()) {
+            sb.append(stack.pop());
+        }
+        return sb.reverse().toString();
+    }
 }
