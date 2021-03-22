@@ -28,7 +28,7 @@ import java.util.PriorityQueue;
 public class TopKFrequentElements {
 
     /**
-     *  O(n*log(n)) - time | O(n + n) - hashmap with n elements + heap with n elements
+     *  O(n*log(n)) - time | O(n + n) - space, hashmap with n elements + heap with n elements
      */
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();
