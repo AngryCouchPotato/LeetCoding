@@ -36,7 +36,7 @@ import java.util.Set;
 public class MinimumNumberOfOperationsToMoveAllBallsToEachBox {
 
     /**
-     *  O(3*n) - time | O(3*n) - space
+     *  O(n) - time | O(n) - space
      */
     public int[] minOperations(String boxes) {
         int[] prefix = new int[boxes.length()];
