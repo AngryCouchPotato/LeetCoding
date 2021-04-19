@@ -54,4 +54,23 @@ public class MaximumDepthOfBinaryTree {
         }
         return depth;
     }
+
+    /**
+     *  O(n) - time | O(n) - space
+     */
+    public int maxDepthDFS(TreeNode root) {
+        if(root == null){
+            return 0;
+        }
+        return traverse(root, 0);
+    }
+
+    public int traverse(TreeNode node, int level) {
+        if(node == null){
+            return level;
+        }
+        int left = traverse(node.left, level + 1);
+        int right = traverse(node.right, level + 1);
+        return Math.max(left, right);
+    }
 }
