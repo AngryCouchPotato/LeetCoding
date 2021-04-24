@@ -44,7 +44,7 @@ public class RecoverATreeFromPreorderTraversal {
 
             int number = 0;
             while(i < S.length() && (S.charAt(i) >= '0' && S.charAt(i) <= '9') ) {
-                int num = Integer.valueOf(S.charAt(i) - '0');
+                int num = S.charAt(i) - '0';
                 number = number * 10 + num;
                 i++;
             }
