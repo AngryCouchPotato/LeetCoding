@@ -1,7 +1,9 @@
 package com.edu.leetcoding.tree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /*
     102. Binary Tree Level Order Traversal
@@ -28,11 +30,11 @@ public class BinaryTreeLevelOrderTraversal {
     //  O(n) time : O(n) space
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
-        levelOrder(root, 0, result);
+        levelOrderDFS(root, 0, result);
         return result;
     }
 
-    private void levelOrder(TreeNode node, int level, List<List<Integer>> result) {
+    private void levelOrderDFS(TreeNode node, int level, List<List<Integer>> result) {
         if (node == null) {
             return;
         }
@@ -40,7 +42,35 @@ public class BinaryTreeLevelOrderTraversal {
             result.add(new ArrayList<>());
         }
         result.get(level).add(node.val);
-        levelOrder(node.left, level + 1, result);
-        levelOrder(node.right, level + 1, result);
+        levelOrderDFS(node.left, level + 1, result);
+        levelOrderDFS(node.right, level + 1, result);
+    }
+
+    //  O(n) time : O(n) space
+    public List<List<Integer>> levelOrderBFS(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if(root == null){
+            return result;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()) {
+            int size = queue.size();
+            List<Integer> list = new ArrayList<>(size);
+            result.add(list);
+            while(size > 0) {
+                TreeNode node = queue.poll();
+                list.add(node.val);
+                if(node.left != null) {
+                    queue.add(node.left);
+                }
+                if(node.right != null) {
+                    queue.add(node.right);
+                }
+                size--;
+            }
+        }
+
+        return result;
     }
 }
