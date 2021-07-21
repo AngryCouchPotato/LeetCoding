@@ -55,7 +55,7 @@ public class CompareVersionNumbers {
 
     /**
      *  O(n + m + max(n, m)) - time complexity, where n and m are lengths of input strings |
-     *  O(n + m) - size complexity to store arrays versionOneArray and versionTwoArray
+     *  O(n + m) - space complexity, to store arrays versionOneArray and versionTwoArray
      */
     public int compareVersion(String version1, String version2) {
         String[] versionOneArray = version1.split("\\.");
