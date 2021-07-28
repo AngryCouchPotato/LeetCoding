@@ -34,12 +34,10 @@ public class BinaryTreeLevelOrderTraversalII {
         }
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        Stack<List<Integer>> stack = new Stack<>();
         List<Integer> curList;
         while(!queue.isEmpty()) {
             int size = queue.size();
             curList = new ArrayList<>();
-            stack.push(curList);
             while(size > 0) {
                 TreeNode node = queue.poll();
                 if(node.left != null) {
@@ -51,9 +49,7 @@ public class BinaryTreeLevelOrderTraversalII {
                 curList.add(node.val);
                 size--;
             }
-        }
-        while(!stack.isEmpty()) {
-            result.add(stack.pop());
+            result.add(0, curList);
         }
         return result;
     }
