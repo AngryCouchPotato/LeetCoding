@@ -34,6 +34,28 @@ public class N_AryTreeLevelOrderTraversal {
         if(root == null) {
             return result;
         }
+        traverse(root, 0, result);
+        return result;
+    }
+
+    private void traverse(Node node, int level, List<List<Integer>> result) {
+        if(result.size() <= level) {
+            result.add(new ArrayList<>());
+        }
+        result.get(level).add(node.val);
+        for(Node childNode : node.children) {
+            traverse(childNode, level + 1, result);
+        }
+    }
+
+    /**
+     * O(n) time complexity: O(n) space complexity
+     */
+    public List<List<Integer>> levelOrderBFS(Node root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if(root == null) {
+            return result;
+        }
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
         List<Integer> levelList;
